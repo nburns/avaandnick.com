@@ -14,5 +14,4 @@ end
 configure :build do
   set :relative_links, true
   activate :relative_assets
-  #set :http_prefix, '/wedding-website'
 end
