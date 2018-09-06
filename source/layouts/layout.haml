@@ -1,0 +1,24 @@
+!!!5
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{name: :viewport}
+    %title
+      - if content_for?(:title)
+        = yield_content(:title)
+
+    = stylesheet_link_tag 'site'
+    = javascript_include_tag 'site'
+  %body
+    %header
+      %nav
+        %ul
+          %li
+            Main
+          %li
+            Location
+          %li
+            Pictures
+
+    = yield
+
