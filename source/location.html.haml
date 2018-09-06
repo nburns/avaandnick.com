@@ -1,8 +1,19 @@
-- content_for(:title) { 'Home' }
+- content_for(:title) { 'Location' }
+
+- map_url = "https://www.openstreetmap.org/export/embed.html?bbox=-149.69043731689456%2C61.2723780818547%2C-149.43191528320315%2C61.35839880000805&amp;layer=mapnik"
+
+
 
 %h1
-  thingy
+  Location
+%iframe{width: "425",
+  height: "350",
+  frameborder: "0",
+  scrolling: "no",
+  marginheight: "0",
+  marginwidth: "0",
+  src: map_url}
 %p
-  stuff goes here
-  %a{href: 'https://google.com'}
-    link stuff
+  The ceremony and reception will be held in Ava's home town of
+  %a{href: 'https://en.wikipedia.org/wiki/Eagle_River,_Anchorage'}
+    Eagle River, AK
