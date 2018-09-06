@@ -9,6 +9,7 @@ set :build_dir, 'docs'
 
 configure :development do
   activate :livereload
+  activate :directory_indexes
 end
 
 configure :build do

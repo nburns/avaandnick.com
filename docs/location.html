@@ -8,6 +8,8 @@ Location
 </title>
 <link href="stylesheets/site.css" rel="stylesheet" />
 <script src="javascripts/site.js"></script>
+<script crossorigin='anonymous' integrity='sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=' src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js'></script>
 </head>
 <body>
 <header>
@@ -34,7 +36,23 @@ The ceremony and reception will be held in Ava's home town of
 <a href='https://en.wikipedia.org/wiki/Eagle_River,_Anchorage'>
 Eagle River, AK
 </a>
+on July 20, 2019.
 </p>
+<p>
+That's
+<span class='countdown'>
+-
+</span>
+days from now.
+</p>
+<script>
+  $('.countdown').each(function() {
+    var weddingDate = moment('July 20, 2019')
+    var today = moment(new Date())
+    var daysUntil = weddingDate.diff(today, 'days')
+    $(this).text(daysUntil)
+  });
+</script>
 
 </body>
 </html>

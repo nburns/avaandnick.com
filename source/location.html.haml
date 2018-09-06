@@ -17,3 +17,20 @@
   The ceremony and reception will be held in Ava's home town of
   %a{href: 'https://en.wikipedia.org/wiki/Eagle_River,_Anchorage'}
     Eagle River, AK
+  on July 20, 2019.
+
+%p
+  That's
+  %span{class: 'countdown'}
+    ="-"
+  days from now.
+
+:javascript
+  $('.countdown').each(function() {
+    var weddingDate = moment('July 20, 2019')
+    var today = moment(new Date())
+    var daysUntil = weddingDate.diff(today, 'days')
+    $(this).text(daysUntil)
+  });
+
+

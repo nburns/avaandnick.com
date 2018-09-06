@@ -11,7 +11,7 @@ a {
   a:focus, a:hover {
     text-decoration: underline; }
   a:visited {
-    color: #CC62C6; }
+    color: #bd3eb6; }
 
 header {
   -webkit-box-sizing: border-box;
@@ -36,3 +36,9 @@ nav > ul {
           align-items: center;
   margin: 0;
   padding: 0; }
+
+nav a {
+  text-decoration: none; }
+
+img {
+  width: 75%; }

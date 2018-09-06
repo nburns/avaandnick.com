@@ -3,7 +3,7 @@ $medium: #639AB1;
 $dark: #172F32;
 $alt-dark: #475B2D;
 $alt-medium: #7A991C;
-$alt-light: #CC62C6;
+$alt-light: darken(#CC62C6, 10%);
 
 body {
   background-color: $light;
@@ -51,5 +51,12 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
+nav {
+  a {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 75%;
 }
