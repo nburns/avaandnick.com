@@ -6,4 +6,26 @@
 %p
   Save-the-Dates will be sent before the end of September.
 
-%img{src: image_path('pointing.jpg')}
+%img{class: 'hover-change',
+  src: image_path('pointing.jpg'),
+  'data-hover': image_path('pointing.gif')}
+
+:javascript
+  $('.hover-change').each(function() {
+    var elem = $(this)
+    var hoverSrc = elem.data('hover')
+    var src = elem.attr('src')
+
+    console.log({this: this, hoverSrc, src})
+
+    function handleIn() {
+      $(this).attr('src', hoverSrc)
+    }
+
+    function handleOut() {
+      $(this).attr('src', src)
+    }
+
+    elem.hover(handleIn, handleOut)
+
+  })
