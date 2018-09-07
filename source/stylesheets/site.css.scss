@@ -66,3 +66,15 @@ iframe {
   width: 75%;
   height: 50vmin;
 }
+
+small {
+  font-size: 30%;
+}
+
+.hidden {
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
