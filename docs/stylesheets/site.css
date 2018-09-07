@@ -45,4 +45,5 @@ img {
   width: 75%; }
 
 iframe {
-  width: 75%; }
+  width: 75%;
+  height: 50vmin; }
