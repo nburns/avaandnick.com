@@ -6,13 +6,10 @@ activate :autoprefixer do |prefix|
 end
 
 set :build_dir, 'docs'
+activate :relative_assets
+set :relative_links, true
 
 configure :development do
   activate :livereload
   activate :directory_indexes
-end
-
-configure :build do
-  set :relative_links, true
-  activate :relative_assets
 end
