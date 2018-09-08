@@ -50,8 +50,3 @@ iframe {
 
 small {
   font-size: 30%; }
-
-.hidden {
-  opacity: 0; }
-  .hidden:hover {
-    opacity: 1; }

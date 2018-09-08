@@ -14,7 +14,8 @@
       integrity: "sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=",
       crossorigin: "anonymous"}
 
-    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"}
+    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js",
+      crossorigin: "anonymous"}
 
     %script{src: "https://www.googletagmanager.com/gtag/js?id=UA-125421670-1",
       async: true}
@@ -25,6 +26,9 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-125421670-1');
+
+    :javascript
+      console.info('Last updated at #{Time.now.strftime("%m/%d/%Y %H:%M")}')
 
 
   %body
@@ -39,8 +43,3 @@
             = link_to 'Pictures', '/pictures'
 
     = yield
-
-    %footer{class: 'hidden'}
-      %small
-        Last updated at #{Time.now.strftime("%m/%d/%Y %H:%M")}
-
