@@ -4,7 +4,7 @@
   Ava and Nick are getting married!
 
 %p
-  Save-the-Dates will be sent before the end of September.
+  Save-the-Dates will be sent before the end of October.
 
 %img{class: 'hover-change',
   src: image_path('pointing.jpg'),
@@ -15,8 +15,6 @@
     var elem = $(this)
     var hoverSrc = elem.data('hover')
     var src = elem.attr('src')
-
-    console.log({this: this, hoverSrc, src})
 
     function handleIn() {
       $(this).attr('src', hoverSrc)
