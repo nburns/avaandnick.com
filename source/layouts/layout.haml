@@ -18,16 +18,6 @@
       integrity: "sha384-BmqX+J1qYayHgEkw+9Idtrl0B0TorHRQW9/iwTxk1samHGPmEI7ovnGvy4SbWxwa",
       crossorigin: "anonymous"}
 
-    %script{src: "https://www.googletagmanager.com/gtag/js?id=UA-125421670-1",
-      async: true}
-
-    :javascript
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-125421670-1');
-
     :javascript
       console.info('Last updated at #{Time.now.strftime("%m/%d/%Y %H:%M")}')
 

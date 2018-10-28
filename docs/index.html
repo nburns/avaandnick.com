@@ -10,16 +10,8 @@ Wedding Announcement
 <script src="javascripts/site.js"></script>
 <script crossorigin='anonymous' integrity='sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=' src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
 <script crossorigin='anonymous' integrity='sha384-BmqX+J1qYayHgEkw+9Idtrl0B0TorHRQW9/iwTxk1samHGPmEI7ovnGvy4SbWxwa' src='https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js'></script>
-<script async src='https://www.googletagmanager.com/gtag/js?id=UA-125421670-1'></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
-  gtag('config', 'UA-125421670-1');
-</script>
-<script>
-  console.info('Last updated at 10/28/2018 15:45')
+  console.info('Last updated at 10/28/2018 15:47')
 </script>
 </head>
 <body>
@@ -50,8 +42,6 @@ Save-the-Dates will be sent soon. 😉
     var elem = $(this)
     var hoverSrc = elem.data('hover')
     var src = elem.attr('src')
-  
-    console.log({this: this, hoverSrc, src})
   
     function handleIn() {
       $(this).attr('src', hoverSrc)
