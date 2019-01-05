@@ -1,29 +1,78 @@
-- content_for(:title) { 'Wedding Announcement' }
+- content_for(:title) { 'Williams/Burns Wedding' }
 
-%h1
+%h1.center
   Ava and Nick are getting married!
 
+%p.center
+  Join us in Eagle River, Alaska for a backyard picnic wedding! The ceremony will be held at the home of Roy & Tito Williams (Ava’s grandparents), followed by a cake, punch & appetizer reception.
+
+
+%img.center-image{src: image_path('rain.jpeg')}
+
+%header{style: "padding-top: 5%;"}
+  %nav
+    %ul
+      %li
+        %h3
+          %a{href: '#date'}
+            Date & Location
+
+      %li.sep
+
+      %li
+        %h3
+          %a{href: '#travel'}
+            Travel & Accommodations
+
+      %li.sep
+
+      %li
+        %h3
+          %a{href: '#schedule'}
+            Schedule
+
+
+%h2
+  %a{id: :date}
+    Date & Location
+
 %p
-  Excited? Us too! More information coming soon.
+  July 20, 2019
 
-%img{class: 'hover-change',
-  src: image_path('pointing.jpg'),
-  'data-hover': image_path('pointing.gif')}
+%p
+  17736 N Eagle River Loop Road, Eagle River, Alaska
 
-:javascript
-  $('.hover-change').each(function() {
-    var elem = $(this)
-    var hoverSrc = elem.data('hover')
-    var src = elem.attr('src')
 
-    function handleIn() {
-      $(this).attr('src', hoverSrc)
-    }
 
-    function handleOut() {
-      $(this).attr('src', src)
-    }
+%h2
+  %a{id: :travel}
+    Travel & Accommodations
+%p
+  For anyone from out of town, you’ll be flying in to the Ted Stevens Anchorage International Airport (ANC). Because Alaska is such a spacious state, you will need a vehicle to get around.
 
-    elem.hover(handleIn, handleOut)
+%p
+  Eagle River has a nice variety of AirBnB and VRBO listings, along with a few hotels and B&Bs. It’s also just 25 minutes away from Anchorage, the hotel hub of Alaska.
 
-  })
+%h2
+  %a{id: :schedule}
+    Schedule
+%p
+  Here’s a brief outline of the wedding weekend:
+
+  %h3
+    Friday, July 19th
+  %p
+    For those in the wedding party, there will be rehearsal and a rehearsal dinner on Friday.
+
+  %h3
+    Saturday, July 20th
+  %p
+    The wedding and reception will be held in the evening at the home of Roy & Tito Williams (Ava’s grandparents).
+
+  %h3
+    Sunday, July 21st through Tuesday, July 23rd
+
+  %p
+    We plan on reserving a number of campsites at Eklutna Lake Campground. Guests are welcome to stay one or both nights or spend the days at Eklutna. There’s a glacial lake, excellent trails, bike rentals, kayak rentals, and a beautiful (slightly difficult) hike.
+
+    This will be a bring-your-own-food/tent event, but if you have any questions or need to borrow something, let us know and we might be able to help!

@@ -1,9 +1,6 @@
 $light: #C9DAE9;
-$medium: #639AB1;
-$dark: #172F32;
-$alt-dark: #475B2D;
-$alt-medium: #7A991C;
-$alt-light: darken(#CC62C6, 10%);
+$dark: #1c3d75;
+$medium: #ec63ec;
 
 body {
   background-color: $light;
@@ -13,10 +10,24 @@ body {
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 3vmin;
+  text-align: left;
+  padding: 2hmin;
+  font-size: 4hmin;
+
+  margin: auto;
+
+  width: 66%;
+
+  line-height: 150%;
+}
+
+h1, h2 {
+  color: $dark;
+  padding-top: 2%;
+}
+
+li {
+  color: $dark;
 }
 
 a {
@@ -28,45 +39,66 @@ a {
   }
 
   &:visited {
-    color: $alt-light;
+    color: $medium;
+  }
+
+  &[id] {
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
+
 header {
   box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+small {
+  font-size: 77%;
 }
 
 nav {
   background-color: $dark;
   color: $light;
   height: 100%;
-  padding: 1em;
-}
+  padding: 0em;
 
-nav > ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
   a {
     text-decoration: none;
   }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: $light;
+  }
+
+
+  li.sep {
+    &:after{
+      content: "〰";
+    }
+    font-size: 5hmin;
+    margin: 4hmin;
+  }
 }
 
-img {
-  width: 75%;
+.center {
+  text-align: center;
 }
 
-iframe {
-  width: 75%;
-  height: 50vmin;
-}
-
-small {
-  font-size: 30%;
+.center-image {
+  margin: auto;
+  display: block;
 }
