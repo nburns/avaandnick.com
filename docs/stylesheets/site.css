@@ -1,52 +1,77 @@
+@charset "UTF-8";
 body {
   background-color: #C9DAE9;
-  color: #172F32;
+  color: #1c3d75;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 3vmin; }
+  text-align: left;
+  padding: 2hmin;
+  font-size: 4hmin;
+  margin: auto;
+  width: 66%;
+  line-height: 150%; }
+
+h1, h2 {
+  color: #1c3d75;
+  padding-top: 2%; }
+
+li {
+  color: #1c3d75; }
 
 a {
-  color: #639AB1; }
+  color: #ec63ec; }
   a:focus, a:hover {
     text-decoration: underline; }
   a:visited {
-    color: #bd3eb6; }
+    color: #ec63ec; }
+  a[id] {
+    color: black; }
+    a[id]:hover {
+      text-decoration: none; }
 
 header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-nav {
-  background-color: #172F32;
-  color: #C9DAE9;
-  height: 100%;
-  padding: 1em; }
-
-nav > ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-  padding: 0; }
-
-nav a {
-  text-decoration: none; }
-
 img {
-  width: 75%; }
-
-iframe {
-  width: 75%;
-  height: 50vmin; }
+  width: 100%; }
 
 small {
-  font-size: 30%; }
+  font-size: 77%; }
+
+strong {
+  font-size: 110%; }
+
+nav {
+  background-color: #1c3d75;
+  color: #C9DAE9;
+  height: 100%;
+  padding: 0em; }
+  nav a {
+    text-decoration: none; }
+  nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #C9DAE9; }
+  nav li.sep {
+    font-size: 5hmin;
+    margin: 4hmin; }
+    nav li.sep:after {
+      content: "〰"; }
+
+.center {
+  text-align: center; }
+
+.center-image {
+  margin: auto;
+  display: block; }
