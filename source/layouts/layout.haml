@@ -3,6 +3,10 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: :viewport}
+
+    - if content_for?(:head)
+      = yield_content(:head)
+
     %title
       - if content_for?(:title)
         = yield_content(:title)
