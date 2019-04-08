@@ -68,4 +68,8 @@ nav {
 
 .center-image {
   margin: auto;
-  display: block; }
+  display: block;
+  width: 80%; }
+
+.footer {
+  width: 30%; }
