@@ -8,7 +8,8 @@ body {
   font-size: 4hmin;
   margin: auto;
   width: 66%;
-  line-height: 150%; }
+  line-height: 150%;
+  border: none; }
 
 h1, h2 {
   color: #1c3d75;
